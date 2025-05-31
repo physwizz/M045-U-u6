@@ -2374,6 +2374,9 @@ static int __mt_gpufreq_pdrv_probe(struct platform_device *pdev)
 	 *		g_cur_opp_volt, g_cur_opp_vsram_volt, g_cur_opp_idx,
 	 *		g_cur_opp_cond_idx);
 	 */
+int MT_GPUFREQ_LOW_BATT_VOLT_LIMIT_FREQ;
+int MT_GPUFREQ_BATT_PERCENT_LIMIT_FREQ;
+int MT_GPUFREQ_BATT_OC_LIMIT_FREQ;
 
 #if IS_ENABLED(CONFIG_MTK_LOW_BATTERY_POWER_THROTTLING)
 	g_low_batt_limited_idx_lvl_0 = 0;
